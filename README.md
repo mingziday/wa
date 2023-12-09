@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# 蛙声
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一个在线播放音乐的单页面应用，用来学习React基本技能
 
-## Available Scripts
+## 1、过程记录
 
-In the project directory, you can run:
+### 2023-12-1 环境准备
+intelliJ idea  
+nodejs  
+git+TortoiseGit  
 
-### `npm start`
+### 2023-12-5
+用Create-React-App搭建脚手架  
+根据《React全家桶：前端开发与实例详解》中的实例，构建音乐列表组件，CSS采用semantic。不适用class方式，而是使用function的方式构建组件
+播放组件为ReactPlayer，见[ReactPlayer](https://github.com/CookPete/react-player)，注意要加controls属性，否则不展示
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2023-12-8
+上传到github的master分支
+利用gh-pages工具，上传到gh-pages分支，设置GitHub Pages，测试[访问](https://mingziday.github.io/wa/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 2、问题
+### modules的安装目录
+git工具[安装](https://blog.csdn.net/weixin_45677696/article/details/128949171)
+npm install xxx 带参数-g安装到全局目录，否则安装到当前目录  
+npm install xxx --save-dev 安装到当前目录，并在项目的package文件的devDependencies节点写入依赖
+### GitHub Pages是什么
+一项静态网站托管服务，它直接从github上获取html/js等网站静态文件，(可选）通过构建过程运行文件，然后发布网站。
+### gh-pages 是什么
+一个将构建文件发布到GitHub的工具，直接上传到git的gh-pages分支，在每个Git仓库的setting目录设置下，外部就可以访问了
+操作流程见[说明](https://juejin.cn/post/7159766711531962398)
 
-### `npm test`
+## 3、计划
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
