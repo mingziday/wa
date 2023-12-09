@@ -11,7 +11,7 @@ git+TortoiseGit
 
 ### 2023-12-5
 用Create-React-App搭建脚手架  
-根据《React全家桶：前端开发与实例详解》中的实例，构建音乐列表组件，CSS采用semantic。不适用class方式，而是使用function的方式构建组件
+根据《React全家桶：前端开发与实例详解》中的实例，构建音乐列表组件，CSS采用semantic。不适用class方式，而是使用function的方式构建组件  
 播放组件为ReactPlayer，见[ReactPlayer](https://github.com/CookPete/react-player)，注意要加controls属性，否则不展示
 
 ### 2023-12-8
