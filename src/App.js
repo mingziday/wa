@@ -57,7 +57,7 @@ function Music({musicInfo,onVote})  {
                 <div className="mini ui labeled button" tableindex="0">
                     <div className="mini ui button">
                         <a onClick={()=> {onVote(musicInfo.id)}}>
-                            <i className="heart icon read"></i>Like
+                            <i className="heart icon red"></i>Like
                         </a>
                     </div>
                     <a className="ui basic red left pointing label">
